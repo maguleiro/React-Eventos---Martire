@@ -1,25 +1,44 @@
 import logo from './logo.svg';
 import './App.css';
+import Promises from "./components/Promises";
+import TitleLanding from "./components/TitleLanding";
+import NavBar from "./components/NavBar";
+import CatalogoMaps from "./components/CatalogoMaps";
+import ItemDetailContainer from "./components/ItemDetailContainer";
+import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
+import UnmountExample from "./components/UnmountExample";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  return (   
+   <>
+    <UnmountExample />
+
+  {/* <BrowserRouter>
+   <NavBar name={"menu"} />
+   <Routes>
+    <Route index path= "/" element={<>    
+      <TitleLanding />  
+      <CatalogoMaps />
+      </>
+    }/>
+    <Route path= "/category/:id" element={<CatalogoMaps />}/>
+    <Route path= "/detail" element={<ItemDetailContainer/>}/>
+
+
+    <Route path="*"
+    element={
+      <div className="error"> 
+      <p> ERROR 404 
+      <a href="/"> <button> volver </button> </a>  
+      </p>
+      </div> 
+    }
+    />        
+   </Routes>
+    </BrowserRouter>*/}
+   </>
   );
+  
 }
 
 export default App;
