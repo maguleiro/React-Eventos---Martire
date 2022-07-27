@@ -1,5 +1,7 @@
 //card para mostrar info de productos
 import ItemListContainer from "./ItemListContainer";
+import ItemCount from "./ItemCount";
+
 import {Link} from  'react-router-dom';
 
 

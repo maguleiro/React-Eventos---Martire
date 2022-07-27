@@ -7,13 +7,15 @@ import CatalogoMaps from "./components/CatalogoMaps";
 import ItemDetailContainer from "./components/ItemDetailContainer";
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 import UnmountExample from "./components/UnmountExample";
+import Intercambiabilidad from "./components/Intercambiabilidad";
 
 function App() {
   return (   
    <>
-    <UnmountExample />
+    {/*<UnmountExample  />
+    <Intercambiabilidad countType="button" />*/}
 
-  {/* <BrowserRouter>
+   <BrowserRouter>
    <NavBar name={"menu"} />
    <Routes>
     <Route index path= "/" element={<>    
@@ -33,9 +35,10 @@ function App() {
       </p>
       </div> 
     }
-    />        
+    />
+    <Route path="/cart" element={<div>cart page</div>}/>        
    </Routes>
-    </BrowserRouter>*/}
+    </BrowserRouter>
    </>
   );
   
