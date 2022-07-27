@@ -6,7 +6,7 @@ const UnmountExample = () => {
 	};
 
 	return(
-		<h1 onClick={triggerAlert("This is triggered by a click")} id="title">
+		<h1 onClick={() => triggerAlert("This is triggered by a click")} id="title">
 			Test
 		</h1>
 		);
